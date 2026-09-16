@@ -1,7 +1,7 @@
 # ⚡ Autonomous Agent Evaluation Harness & Verifiable RL Datasets (2026)
 ### *A Production-Grade, Sandbox-Executable Evaluation Environment & Reinforcement Learning Suite for Autonomous Systems & Tool-Use LLMs*
 
-[![CI](https://github.com/beatsprom/autonomous-agent-eval-harness/actions/workflows/ci.yml/badge.svg)](https://github.com/beatsprom/autonomous-agent-eval-harness/actions)
+[![CI](https://github.com/beatsprom-alt/autonomous-agent-eval-harness/actions/workflows/ci.yml/badge.svg)](https://github.com/beatsprom-alt/autonomous-agent-eval-harness/actions)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Datasets-yellow)](https://huggingface.co/beatsprom)
