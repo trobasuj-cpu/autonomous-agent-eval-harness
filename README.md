@@ -26,6 +26,7 @@ The **beatsprom Autonomous Agent Evaluation Harness** solves this by pairing den
 | Suite ID | Domain Focus | Verifiable Asserts | Benchmark Lift | Open Source Core | Commercial Suite |
 | :--- | :--- | :---: | :---: | :---: | :---: |
 | **`01_db_vector`** | **Database Internals & Vector Search Engines** (LSM, HNSW, Raft, MVCC, io_uring) | 100% Deterministic | **+27.4%** DB-Bench<br>**+28.1%** VectorDBBench | [Hugging Face (2.5k)](https://huggingface.co/datasets/beatsprom/autonomous-db-internals-vector-search-suite) | [Gumroad (12.5k)](https://beatsprom.gumroad.com/l/db-internals-vector-agent) |
+| **`02_cloud_gpu`** | **Cloud GPU Infrastructure & Distributed LLM Serving** (Slurm, vLLM PagedAttention, NCCL, RoCE v2, GDS) | 100% Deterministic | **+26.8%** vLLM-Bench<br>**+28.6%** Slurm-Bench | [Hugging Face (2.5k)](https://huggingface.co/datasets/beatsprom/autonomous-cloud-gpu-slurm-serving-suite) | [Gumroad (12.5k)](https://beatsprom.gumroad.com/l/cloud-gpu-slurm-agent) |
 
 ---
 
