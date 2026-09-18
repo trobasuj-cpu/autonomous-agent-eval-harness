@@ -27,6 +27,7 @@ The **beatsprom Autonomous Agent Evaluation Harness** solves this by pairing den
 | :--- | :--- | :---: | :---: | :---: | :---: |
 | **`01_db_vector`** | **Database Internals & Vector Search Engines** (LSM, HNSW, Raft, MVCC, io_uring) | 100% Deterministic | **+27.4%** DB-Bench<br>**+28.1%** VectorDBBench | [Hugging Face (2.5k)](https://huggingface.co/datasets/beatsprom/autonomous-db-internals-vector-search-suite) | [Gumroad (12.5k)](https://beatsprom.gumroad.com/l/db-internals-vector-agent) |
 | **`02_cloud_gpu`** | **Cloud GPU Infrastructure & Distributed LLM Serving** (Slurm, vLLM PagedAttention, NCCL, RoCE v2, GDS) | 100% Deterministic | **+26.8%** vLLM-Bench<br>**+28.6%** Slurm-Bench | [Hugging Face (2.5k)](https://huggingface.co/datasets/beatsprom/autonomous-cloud-gpu-slurm-serving-suite) | [Gumroad (12.5k)](https://beatsprom.gumroad.com/l/cloud-gpu-slurm-agent) |
+| **`03_linux_ebpf`** | **Linux Kernel, eBPF & XDP Programmable Dataplane** (AF_XDP, BPF Verifier, LSM, Sockops, io_uring) | 100% Deterministic | **+28.3%** eBPF-Perf<br>**+29.3%** Kernel-Security | [Hugging Face (2.5k)](https://huggingface.co/datasets/beatsprom/autonomous-linux-kernel-ebpf-xdp-suite) | [Gumroad ($0+ Free)](https://beatsprom.gumroad.com/l/linux-kernel-ebpf-agent) |
 
 ---
 
@@ -47,6 +48,9 @@ python suites/01_database_internals_vector_engine/verify_suite.py
 
 # Run the complete verification harness for Suite 02 (Cloud GPU Infrastructure)
 python suites/02_cloud_gpu_infrastructure/verify_suite.py
+
+# Run the complete verification harness for Suite 03 (Linux Kernel & eBPF)
+python suites/03_linux_kernel_ebpf/verify_suite.py
 ```
 
 Expected output (Suite 02):
@@ -81,6 +85,8 @@ Fine-tuning open-weights models (e.g. Qwen-2.5-Coder-7B, Llama-3.1-8B) on our ve
 | **Llama-3.1-8B-Instruct** | **VectorDBBench (Recall@10)** | 51.7% | **79.8%** | **+28.1%** 🚀 |
 | **Qwen-2.5-Coder-7B-Instruct** | **vLLM-Bench / PagedAttention** | 56.4% | **83.2%** | **+26.8%** 🚀 |
 | **Qwen-2.5-Coder-7B-Instruct** | **Slurm-Bench / SchedPreempt** | 52.8% | **81.4%** | **+28.6%** 🚀 |
+| **Qwen-2.5-Coder-7B-Instruct** | **eBPF-Perf / AF_XDPZeroCopy** | 54.2% | **82.5%** | **+28.3%** 🚀 |
+| **Llama-3.1-8B-Instruct** | **Kernel-Security / BPFVerifierBound** | 52.6% | **81.9%** | **+29.3%** 🚀 |
 | **DeepSeek-Coder-V2-Lite** | **Systems Storage ToolBench** | 58.0% | **84.3%** | **+26.3%** 🚀 |
 
 ---
@@ -90,6 +96,7 @@ Fine-tuning open-weights models (e.g. Qwen-2.5-Coder-7B, Llama-3.1-8B) on our ve
 Train your own model in 15 minutes on a free Kaggle T4 GPU using Unsloth and TRL:
 * 📓 **Database & Vector Search Agent (Qwen2.5)**: [Kaggle 1-Click Notebook](https://www.kaggle.com/code/beatsprom/1-click-db-vector-agent-fine-tuning-qwen2-5)
 * 📓 **Cloud GPU & Slurm Serving Agent (Qwen2.5)**: [Kaggle 1-Click Notebook](https://www.kaggle.com/code/beatsprom/1-click-cloud-gpu-slurm-finetuning-qwen2-5)
+* 📓 **Linux Kernel & eBPF Dataplane Agent (Qwen2.5)**: [Kaggle 1-Click Notebook](https://www.kaggle.com/code/beatsprom/1-click-linux-kernel-ebpf-finetuning-qwen2-5)
 
 ---
 
